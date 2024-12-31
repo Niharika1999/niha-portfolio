@@ -3,7 +3,8 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import LandingPage from './components/Home/LandingPage';
+// import LandingPage from './components/Home/LandingPage';
+import Home from './components/Home/Home';
 import Navbar from './components/NavBar/Navbar';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -16,7 +17,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Home />} />
            <Route path="/about" element={<About />} />
          <Route path="/projects" element={<Projects />} />
           <Route path="/ui-companion-tool" element={<Uicompanion />} />

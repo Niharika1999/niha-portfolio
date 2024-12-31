@@ -1,0 +1,103 @@
+/* General layout container for the entire section */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 40px;
+    font-family: var(--body-font);
+  }
+  
+  /* Project name heading */
+  .project-name {
+    font-size: var(--font-size-h1);
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Wrapper for left and right columns */
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    text-align: left;
+  }
+  
+  /* Left column (Project Info) */
+  .left-column {
+    flex: 1;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: var(--font-size-h3);
+    
+  }
+  
+  /* Right column (content like Scope, Process, Solution) */
+  .right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual content sections */
+  .section-content h3 {
+    font-size: var(--font-size-h3);
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .section-content p {
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+    color: var(--description-color);
+  }
+  
+
+  /* Header row for H1 and back button */
+.header-row {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px; /* Space between the back button and H1 */
+  }
+  
+  /* Back Button Icon */
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .back-button:hover {
+    background-color: var(--heading-color);
+    transform: scale(1.1);
+  }
+  
+  .back-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Project name heading */
+  .project-name {
+    font-size: var(--font-size-h1);
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+  

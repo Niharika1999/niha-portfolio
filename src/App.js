@@ -10,7 +10,7 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Uicompanion from './components/Projects/UI-Companion';
 import ExploreGaguk from './components/Projects/Explore-gaguk';
-
+import AboutMe from './components/About/AboutMe';
 function App() {
   return (
     <Router>
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-           <Route path="/about" element={<About />} />
+           <Route path="/about" element={<AboutMe />} />
          <Route path="/projects" element={<Projects />} />
           <Route path="/ui-companion-tool" element={<Uicompanion />} />
         <Route path="/explore-gagugk" element={<ExploreGaguk />} />

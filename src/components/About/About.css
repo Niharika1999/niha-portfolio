@@ -1,123 +1,86 @@
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 2rem 4rem;
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+.leftSection, .rightSection {
+  flex: 1;
+  max-width: 50%;
+}
+
+.leftSection {
+  margin-right: 2rem; 
+}
+
+.rightSection {
+  margin-left: 2rem; 
+  overflow: visible;
+}
+.fullWidthSection {
+  flex: 1 1 100%;
+  margin-top: 2rem;
+}
+
+.heading {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-h1);
+  color: var(--heading-color);
+  margin-bottom: 1.5rem;
+  line-height: 95%;
+}
+
+.description {
+  font-family: var(--body-font);
+  font-size: var(--font-size-body);
+  color: var(--body-color);
+  line-height: 145%;
+  margin-bottom: 2rem;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+}
+  /*experiences*/
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+    margin-top: 40px;
+  }
+  
+  .experience-description {
+    /* border-bottom: 2px solid #000; */
+    padding-bottom: 20px;
+  }
+  
+  .experience-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-collapse: collapse;
+  }
+  
+  .experience-row {
+    display: contents;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .experience-cell {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .songOfTheWeek {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    padding: 2rem 4rem;
-    background-color: var(--background-color);
-    height: 100vh;
-  }
-  
-  .leftSection, .rightSection {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .leftSection {
-    margin-right: 2rem; 
-  }
-  
-  .rightSection {
-    margin-left: 2rem; 
-    overflow: visible;
-  }
-  .fullWidthSection {
-    flex: 1 1 100%;
-    margin-top: 2rem;
-  }
-  
-  .heading {
-    font-family: var(--heading-font);
-    font-size: var(--font-size-h1);
-    color: var(--heading-color);
-    margin-bottom: 1.5rem;
-    line-height: 95%;
-  }
-  
-  .description {
-    font-family: var(--body-font);
-    font-size: var(--font-size-body);
-    color: var(--body-color);
-    line-height: 145%;
-    margin-bottom: 2rem;
-  }
-  
-  .image {
+    flex-direction: column;
+    align-items: left;
     width: 100%;
-    border-radius: 8px;
-    height: 100%;
   }
-    /*experiences*/
-    .experience-container {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 20px;
-      align-items: start;
-      margin-top: 40px;
-    }
-    
-    .experience-description {
-      /* border-bottom: 2px solid #000; */
-      padding-bottom: 20px;
-    }
-    
-    .experience-table {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      border-collapse: collapse;
-    }
-    
-    .experience-row {
-      display: contents;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-    
-    .experience-cell {
-      padding: 10px 15px;
-      font-size: 14px;
-    }
-    
-    .songOfTheWeek {
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      width: 100%;
-    }
-    
-    /* .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 20px;
-        justify-content: flex-start;
-      }
-      
-      .skill-button {
-        display: flex;
-        align-items: center;
-        padding: 8px 16px;
-        border: 1px solid var(--description-color);;
-        border-radius: 30px;
-        background-color: transparent;
-        font-size: 14px;
-        font-family: "Arial", sans-serif;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-        cursor: default;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-      
-      .skill-button:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-      }
-      
-      .skill-icon {
-        color: var(--accent-color);
-        margin-right: 10px;
-      }
-      
-      .skill-button:focus {
-        outline: 2px solid var(--accent-color);
-        outline-offset: 2px;
-      } */
-      
+  

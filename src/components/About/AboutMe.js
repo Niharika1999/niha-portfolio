@@ -46,7 +46,7 @@ const AboutMe = () => {
             {/* Divider */}
             <hr className="divider" />
 
-            {/* Bottom Section */}
+{/*            
             <div className="about-bottom">
                 <div className="about-education">
                     <h2>Education</h2>
@@ -66,7 +66,7 @@ const AboutMe = () => {
                 </div>
 
             </div>
-            <hr className="divider" />
+            <hr className="divider" /> */}
         </div>
     );
 };

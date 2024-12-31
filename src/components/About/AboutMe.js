@@ -19,7 +19,21 @@ const AboutMe = () => {
                     <p>
                         Outside of work, I enjoy photography and music. Scroll down to check out some of my favorite shots!
                     </p>
+                    <div className="songOfTheWeek">
+    {/* <p >Song of the Week:</p> */}
+    <iframe
+      style={{ borderRadius: '12px',  }}
+      src="https://open.spotify.com/embed/track/7F5oktn5YOsR9eR5YsFtqb?utm_source=generator" 
+      width="100%" 
+      height="140" 
+      frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy"
+    ></iframe>
+  </div>
                 </div>
+                
                 <div className="about-image">
                     <img
                         src={`${process.env.PUBLIC_URL}/assets/about.png`} // Replace with your actual image URL

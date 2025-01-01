@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
@@ -45,7 +45,7 @@
   width: 100%;
   border-radius: 8px;
   height: 100%;
-}
+} */
   /*experiences*/
   .experience-container {
     display: grid;

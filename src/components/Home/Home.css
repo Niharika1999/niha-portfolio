@@ -1,8 +1,8 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0%;
+  align-items: flex-start; 
+  padding: 2rem 4rem;
   background-color: var(--background-color);
   height: 100vh;
 }
@@ -25,6 +25,8 @@
   max-width: 50%;
   margin-bottom: 0px;
   vertical-align: middle;
+  flex: 1;
+  margin-right: 2rem; 
 }
 
 .heading {
@@ -50,11 +52,12 @@
   position: relative;
   width: 1fr;
   height: auto;
-  overflow: hidden;
+  overflow: visible;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   margin-bottom: 0px;
+  margin-left: 2rem; 
 }
 
 .rightSection img {
@@ -69,4 +72,107 @@
   width: 100%;
   border-radius: 8px;
   border: 1px solid var(--heading-color);
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 1199px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    padding: 0; /* Remove extra padding */
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%; /* Full width */
+    height: 50%; /* Half the screen height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+    text-align: center; /* Align text */
+    margin: 0; /* Remove margins */
+  }
+  .leftSection {
+   max-width: 75%; /* Add margin between sections */
+  }
+
+  .heading {
+    font-size: var(--font-size-h1);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: var(--font-size-body);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .button-primary {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .rightSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Media Queries for Phone */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    justify-content: flex-start; /* Align sections at the top */
+    align-items: center; /* Center align items */
+    padding: 1rem; /* Reduce padding */
+    height: auto; /* Allow content to dictate height */
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height for content */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+    margin: 0; /* Remove margins */
+    padding: 1rem 0; /* Add some vertical padding */
+  }
+
+  .leftSection {
+    max-width: 90%; /* Constrain width for better readability */
+  }
+
+  .heading {
+    font-size: calc(var(--font-size-h1) - 0.5rem); /* Slightly smaller font */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: calc(var(--font-size-body) - 0.2rem); /* Slightly smaller font */
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+
+  .button-primary {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1.5rem; /* Adjust button size for smaller screens */
+  }
+
+  .rightSection img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
 }

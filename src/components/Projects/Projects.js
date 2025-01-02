@@ -38,7 +38,7 @@ const Projects = () => {
               height={600}
               className="project-image"
             />
-            <h3>{project.title}</h3>
+            <h2>{project.title}</h2>
             {/* <p>{project.description}</p> */}
             <div className="skills-container">
               {project.tags.map((tag, index) => (

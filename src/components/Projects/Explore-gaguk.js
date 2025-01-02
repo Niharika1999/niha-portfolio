@@ -48,7 +48,6 @@ const ExploreGaguk = () => {
               Live Website
             </a>
           </div>
-
       </div>
     </div>
   </section>

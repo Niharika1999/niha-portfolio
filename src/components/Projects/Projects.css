@@ -74,3 +74,63 @@
     margin-bottom: 0;
   padding-bottom: 0;
   }
+
+  /* Base styles remain unchanged */
+
+/* Media Queries for Tablet */
+@media (max-width: 1199px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px; /* Reduce gap between cards */
+    padding: 0 10px; /* Adjust padding to fit within the screen */
+    margin: 0 auto; /* Center the grid */
+    width: 100%; /* Ensure it doesn't exceed the screen width */
+    box-sizing: border-box; /* Include padding in width calculations */
+  }
+
+  .project-card {
+    max-width: 100%; /* Ensure the card fits within the grid */
+    padding: 16px; /* Adjust padding */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .project-image {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+
+  h3 {
+    font-size: var(--font-size-h2);
+    text-align: center; /* Center align titles */
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 16px; /* Smaller gap */
+    padding: 0 10px; /* Ensure content fits within screen */
+    margin: 0 auto; /* Center the grid */
+    width: 100%; /* Ensure no horizontal scrolling */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .project-card {
+    max-width: 100%; /* Full width */
+    padding: 12px; /* Reduce padding */
+    margin: 0 auto; /* Center the card */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .project-image {
+    width: 100%; /* Full width for images */
+    height: auto;
+    border-radius: 8px; /* Smaller border radius */
+  }
+
+  h3 {
+    font-size: calc(var(--font-size-h2) - 0.5rem); /* Slightly smaller font size */
+    text-align: center; /* Center align titles */
+  }
+}

@@ -11,6 +11,7 @@ import Projects from './components/Projects/Projects';
 import Uicompanion from './components/Projects/UI-Companion';
 import ExploreGaguk from './components/Projects/Explore-gaguk';
 import AboutMe from './components/About/AboutMe';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/ui-companion-tool" element={<Uicompanion />} />
         <Route path="/explore-gagugk" element={<ExploreGaguk />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

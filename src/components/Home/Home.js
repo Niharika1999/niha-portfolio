@@ -22,6 +22,7 @@ export default function Home() {
             <button className="button-primary">Get in Touch →</button>
           </a>
         </div>
+        <hr></hr>
         <div className="rightSection">
           <img
             src={`${process.env.PUBLIC_URL}/assets/computer-work.gif`}

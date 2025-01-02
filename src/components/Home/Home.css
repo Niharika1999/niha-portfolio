@@ -4,7 +4,7 @@
   align-items: flex-start; 
   padding: 2rem 4rem;
   background-color: var(--background-color);
-  height: 100vh;
+  /* height: 100vh; */
 }
 .projects-section {
   /* margin-top: 3rem; */

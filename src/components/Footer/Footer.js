@@ -15,16 +15,16 @@ const Footer = () => {
       {/* Links to Pages */}
       <div className="footer-links">
         <div className="footer-links-container">
-        <a href="#about">Home</a>
-        <a href="#portfolio">Projects</a>
-        <a href="#contact">About</a>
-        <a href="#contact">Resume</a>
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/about">About</a>
+        <a href="https://drive.google.com/file/d/10kXfZHy7LY4HeYG1orFw4EkjrDvlZlgX/view?usp=sharing">Resume</a>
         </div>
         <div className="footer-links-container">
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/niharika-updhyayula" target="_blank" rel="noopener noreferrer">
             <FaLinkedin /> LinkedIn
           </a>
-          <a href="mailto:your-email@example.com">
+          <a href="mailto:niharika.u03.com">
             <FaEnvelope /> Mail
           </a>
         </div>

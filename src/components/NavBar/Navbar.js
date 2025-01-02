@@ -21,6 +21,7 @@ function Navbar() {
         <Link to="/" className="navbar-link">HOME</Link>
         <Link to="/about" className="navbar-link">ABOUT</Link>
         <Link to="/projects" className="navbar-link">PROJECTS</Link>
+        <Link to="https://drive.google.com/file/d/10kXfZHy7LY4HeYG1orFw4EkjrDvlZlgX/view?usp=sharing" className="navbar-link">RESUME</Link>
       </div>
     </nav>
   );

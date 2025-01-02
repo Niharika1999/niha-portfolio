@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AboutMe.css';
+import PolaroidGallery from './PolaroidGallery';
+
 const AboutMe = () => {
+    const [randomFact, setRandomFact] = useState('');
+    const [isClicked, setIsClicked] = useState(false); 
+
+    const facts = [
+        "I was the Plannig head during my Undergrad for  Student Org !",
+        "I went to my first 3 concerts in 2024.",
+        "Photography is my favorite thing to do.",
+        "Recently gave in and started watching One Piece, enjoying it so far!",
+        "I love bread!",
+        "Saw Taylor Swift live for the first time!",
+        "evermore, The War, SOMO:FUME are my current favorite albums.",
+    ];
+
+    const displayRandomFact = () => {
+        const fact = facts[Math.floor(Math.random() * facts.length)];
+        setRandomFact(fact);
+    };
     return (
         <div className="about-container">
             {/* Top Section */}
@@ -20,33 +39,42 @@ const AboutMe = () => {
                         Outside of work, I enjoy photography and music. Scroll down to check out some of my favorite shots!
                     </p>
                     <div className="songOfTheWeek">
-    {/* <p >Song of the Week:</p> */}
-    <iframe
-      style={{ borderRadius: '12px',  }}
-      src="https://open.spotify.com/embed/track/7F5oktn5YOsR9eR5YsFtqb?utm_source=generator" 
-      width="100%" 
-      height="140" 
-      frameBorder="0" 
-      allowfullscreen="" 
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-      loading="lazy"
-    ></iframe>
-  </div>
+                        {/* <p >Song of the Week:</p> */}
+                        <iframe
+                            style={{ borderRadius: '12px', }}
+                            src="https://open.spotify.com/embed/track/7F5oktn5YOsR9eR5YsFtqb?utm_source=generator"
+                            width="100%"
+                            height="140"
+                            frameBorder="0"
+                            allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
                 </div>
-                
+
                 <div className="about-image">
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/about.png`} // Replace with your actual image URL
+                        src={`${process.env.PUBLIC_URL}/assets/about.png`}
                         alt="About Me"
                         className="rounded-image"
                     />
+                    <div
+                    className={`image-button-container ${isClicked ? 'clicked' : ''}`}
+                >
+                    <button
+                        onClick={displayRandomFact}
+                        className="image-button"
+                    ></button>
+                    {randomFact && <p className="random-fact">{randomFact}</p>}
+                </div>
                 </div>
             </div>
 
             {/* Divider */}
-            <hr className="divider" />
+            {/* <hr className="divider" /> */}
 
-{/*            
+            {/*            
             <div className="about-bottom">
                 <div className="about-education">
                     <h2>Education</h2>
@@ -67,6 +95,7 @@ const AboutMe = () => {
 
             </div>
             <hr className="divider" /> */}
+            {/* <PolaroidGallery/> */}
         </div>
     );
 };

@@ -1,0 +1,58 @@
+.motion-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.polaroid-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.polaroid {
+    background: #fdf7e3;
+    border: 4px solid #f7efd2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    font-family: "Instrument Serif", serif;
+    transform: rotate(calc(-5deg + 10deg * var(--random-tilt)));
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.polaroid:nth-child(even) {
+    --random-tilt: 1;
+}
+
+.polaroid:nth-child(odd) {
+    --random-tilt: -1;
+}
+
+.polaroid-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.polaroid-caption {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    height: calc(100% - 200px - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.polaroid:hover {
+    transform: rotate(0);
+}

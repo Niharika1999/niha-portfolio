@@ -4,7 +4,7 @@ import PolaroidGallery from './PolaroidGallery';
 
 const AboutMe = () => {
     const [randomFact, setRandomFact] = useState('');
-    const [isClicked, setIsClicked] = useState(false); 
+    const [isClicked, setIsClicked] = useState(true);
 
     const facts = [
         "I was the Plannig head during my Undergrad for  Student Org !",
@@ -59,15 +59,14 @@ const AboutMe = () => {
                         alt="About Me"
                         className="rounded-image"
                     />
-                    <div
-                    className={`image-button-container ${isClicked ? 'clicked' : ''}`}
-                >
-                    <button
-                        onClick={displayRandomFact}
-                        className="image-button"
-                    ></button>
-                    {randomFact && <p className="random-fact">{randomFact}</p>}
-                </div>
+                    <div className={`image-button-container ${isClicked ? 'clicked' : ''}`}>
+                        <button
+                            onClick={displayRandomFact}
+                            className="image-button"
+                        ></button>
+                        {randomFact && <p className="random-fact">{randomFact}</p>}
+
+                    </div>
                 </div>
             </div>
 

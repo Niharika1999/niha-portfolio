@@ -1,162 +1,164 @@
 .about-container {
-    padding: 2rem;
-  }
-  
-  .about-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-
-  .about-image img {
-    /* max-width: 500px; */
-    border-radius: 8px; /* Rounded corners */
-    max-height: 500px;
-    padding-bottom: 1%;
-    object-position: top;
-  }
-  .about-image img:hover {
-    transform: scale(1.02); /* Slight zoom-in effect on hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+  padding: 2rem;
 }
-  
-  .divider {
-    border: 0;
-    height: 1px;
-    background: var(--body-color);
-    margin: 2rem 0;
-  }
-  
-  .about-bottom {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .about-education,
-  .about-stack {
-    flex: 1;
-  }
-  
+
+.about-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.about-image img {
+  /* max-width: 500px; */
+  border-radius: 8px; /* Rounded corners */
+  max-height: 500px;
+  padding-bottom: 1%;
+  object-position: top;
+}
+.about-image img:hover {
+  transform: scale(1.02); /* Slight zoom-in effect on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: var(--body-color);
+  margin: 2rem 0;
+}
+
+.about-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-education,
+.about-stack {
+  flex: 1;
+}
+
 
 /* Random Fact Display */
 .random-fact {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #333;
-    text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
 }
 
 /* Responsive adjustments for medium screens */
 @media (max-width: 768px) {
-  .about-container {
-      padding: 1.5rem;
-  }
+.about-container {
+    padding: 1.5rem;
+}
 
-  .about-top {
-      flex-direction: column; /* Stack sections vertically */
-      align-items: center;
-  }
+.about-top {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+}
 
-  .about-image img {
-      max-width: 300px;
-      height: 300px; /* Maintain square shape */
-  }
+.about-image img {
+    max-width: 300px;
+    height: 300px; /* Maintain square shape */
+}
 
-  .about-text {
-      text-align: center; /* Center-align text */
-      padding: 0 1rem; /* Add padding for better readability */
-  }
+.about-text {
+    text-align: center; /* Center-align text */
+    padding: 0 1rem; /* Add padding for better readability */
+}
 
-  .about-bottom {
-      flex-direction: column; /* Stack sections vertically */
-      gap: 1.5rem; /* Add spacing between sections */
-  }
+.about-bottom {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 1.5rem; /* Add spacing between sections */
+}
 
-  .about-education,
-  .about-stack {
-      text-align: center; /* Center-align content */
-  }
+.about-education,
+.about-stack {
+    text-align: center; /* Center-align content */
+}
 }
 
 /* Further adjustments for small screens */
 @media (max-width: 480px) {
-  .about-container {
-      padding: 1rem;
-  }
+.about-container {
+    padding: 1rem;
+}
 
-  .about-image img {
-      max-width: 200px;
-      height: 200px; /* Further reduce size */
-      border-radius: 12px; /* Adjust rounded corners */
-  }
+.about-image img {
+    max-width: 200px;
+    height: 200px; /* Further reduce size */
+    border-radius: 12px; /* Adjust rounded corners */
+}
 
-  .about-text {
-      font-size: 0.9rem; /* Reduce font size */
-  }
+.about-text {
+    font-size: 0.9rem; /* Reduce font size */
+}
 
-  .random-fact-button {
-      width: 100%; /* Make button full width */
-      padding: 0.8rem; /* Increase tappable area */
-  }
+.random-fact-button {
+    width: 100%; /* Make button full width */
+    padding: 0.8rem; /* Increase tappable area */
+}
 
-  .about-education,
-  .about-stack {
-      padding: 0 1rem; /* Add horizontal padding for spacing */
-  }
+.about-education,
+.about-stack {
+    padding: 0 1rem; /* Add horizontal padding for spacing */
+}
 }
 @keyframes animateImageButton {
-  0% {
-      transform: scale(1.5);
-  }
-  50% {
-      transform: scale(1.5);
-  }
-  100% {
-      transform: scale(1);
-  }
+0% {
+    transform: scale(1.5);
+}
+50% {
+    transform: scale(1.5);
+}
+100% {
+    transform: scale(1);
+}
 }
 .image-button-container {
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
+display: flex;
+align-items: center;
+transition: all 0.3s ease;
 }
 
 .image-button-container.clicked {
-  justify-content: flex-start; /* Align button to the left */
+justify-content: flex-start; /* Align button to the left */
 }
 
 .image-button {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background: url('../../../public/assets/image.png') no-repeat center center;
-  background-size: contain;
-  border: none;
-  cursor: pointer;
-  animation: animateImageButton 0.9s ease infinite both;
-  transition: all 0.3s ease;
-  margin-right: 10px; /* Add spacing between the button and text */
+display: inline-block;
+width: 25px;
+height: 25px;
+background: url('../../../public/assets/image.png') no-repeat center center;
+background-size: contain;
+border: none;
+cursor: pointer;
+animation: animateImageButton 0.9s ease infinite both;
+transition: all 0.3s ease;
+margin-right: 10px; /* Add spacing between the button and text */
 }
 
 .image-button:hover {
-  transform: scale(1.1);
+transform: scale(1.1);    
+  cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoCAAAFgAAACgAAAAgAAAAQAAAAAEACAAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAABgYGAP/48AD39/cA//36APb29gD//vwAERERAPz8/AAKCgoAHh4eAAMDAwAXFxcAEBAQAAICAgAWFhYA+vr6AAEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NAAAABw0NAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBgYRAAAABAMRAAAAAAAAAAAAAAAAAAAAAAAAAAAACwQGBhARAAYGBgYOAAAAAAAAAAAAAAAAAAAAAAAAAAsGBgYGBgYGBgQGBggAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgYGBgYGBgYGBhEAAAAAAAAAAAAAAAAAAAAAAAAABgYGBgYGBgYGBgYEEQAAAAAAAAAAAAAAAAAAAAAAAAsGBgYGBgYGBgQGBhARAAAAAAAAAAAAAAAAAAAAAAAAAAAEBgYGBgUFBgYGABEAAAAAAAAAAAAAAAAAAAAAAAAAAAwGBgYGBgYGBgAAAAAAAAAAAAAAAAAAAAAAAAAKBgYAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAEQYGBgUAAAAAAAAAAAAABAYGBAAAAAAAAAAAAAAAAAARBgYGBgAAAAsAAAAAAAAGBgYEAAAAAAAAAAAAAAAAABEGBgQAAAUGABEABgYGAAQGBgQAAAAAAAAAAAAAAAAAEQYGBgAGBgYGAAAFBgUAAAUGBAAAAAAAAAAAAAAAAAAACwYGAAYGBgYABgUGBgYBAwQAAAAAAAAAAAAAAAAAAAAAAAAABgYGBgAGBgYGBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBgYGAAYFBgYGDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgYABgUGBgYRAAAAAAAAAAAAAAAAAAAAAAAAAAAADwYGCQAOAwMCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////////////////84///+EH///AA///gAH//wAA//8AAP//AAD//wAA//8AAP/+AAB//AAAP/gAAB/4AAAf+AAAH/gAAB/8AAA//gAAf/8AAP//wAH/38AD/8/hB//P84//z////8H////A////////////////////'), auto; /* Replace with a paw cursor URL */
+
 }
 
 .image-button:active {
-  transform: scale(0.95);
+transform: scale(0.95);
 }
 
 .random-fact {
-  font-size: 1rem;
-  color: #333;
-  display: none; /* Hide initially */
+font-size: 1rem;
+color: #333;
+display: none; /* Hide initially */
 }
 
 .image-button-container.clicked .random-fact {
-  display: block; /* Show the text when clicked */
+display: block; /* Show the text when clicked */
 }
 

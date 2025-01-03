@@ -11,7 +11,8 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="navbar-logo">Niharika Upadhyayula</div>
+      {/* <div className="navbar-logo">Niharika Upadhyayula</div> */}
+      <a href='/' className="navbar-logo">Niharika Upadhyayula</a>
       <button className="hamburger-menu" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>

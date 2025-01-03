@@ -7,15 +7,18 @@ const AboutMe = () => {
     const [isClicked, setIsClicked] = useState(true);
 
     const facts = [
-        "I was the Plannig head during my Undergrad for  Student Org !",
-        "I went to my first 3 concerts in 2024.",
-        "Photography is my favorite thing to do.",
-        "Recently gave in and started watching One Piece, enjoying it so far!",
-        "I love bread!",
-        "Saw Taylor Swift live for the first time!",
-        "evermore, The War, SOMO:FUME are my current favorite albums.",
+        "Back in undergrad, I was the Planning Head for a student org. Translation: professional fire extinguisher of last-minute disasters.",
+        "2024: The year I became a concert junkie with *three* back-to-back shows. Now I get why people cry at live music.",
+        "Photography is my passion... and my excuse to tell people to 'hold still!'",
+        "Finally gave into the One Piece hype. Currently on Punk Hazard, and still no idea where the treasure is. Send snacks.",
+        "Saw Taylor Swift live, and let me tell you – the screaming, crying, and throwing up? All me.",
+        "My top albums right now? evermore, The War, and SOMO:FUME.",
+        "My IDE is my happy place. Well, until the red squiggly lines show up.",
+        "Dark mode isn’t a preference; it’s a personality trait.",
+        "My relationship with color palettes? It’s complicated, but we make it work—eventually.",
+        "When my code works, I’m convinced I’m a wizard. When it doesn’t, it’s a ‘learning opportunity.’"
     ];
-
+    
     const displayRandomFact = () => {
         const fact = facts[Math.floor(Math.random() * facts.length)];
         setRandomFact(fact);

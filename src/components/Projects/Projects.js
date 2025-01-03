@@ -22,6 +22,20 @@ const Projects = () => {
       image: `${process.env.PUBLIC_URL}/assets/explore-gaguk.png`,
       path: "/explore-gagugk", // Route path for this project
     },
+    {
+      id: 3,
+      title: "Hotel Management System",
+      tags: ["Academic", "Full Stack"],
+      image: `${process.env.PUBLIC_URL}/assets/Hotel-management.png`,
+      path: "https://gmuedu-my.sharepoint.com/:f:/g/personal/supadhy2_gmu_edu/EmPxEwL744tKgYPHFYQeDyYBFPUpthk3B_W2nLNLEg5YXA?e=VpsehI", // Route path for this project
+    },
+    {
+      id: 4,
+      title: "My New House",
+      tags: ["UX", "Devloper"],
+      image: `${process.env.PUBLIC_URL}/assets/MyNewHouse.png`,
+      path: "https://www.mynewhousela.com/", // Route path for this project
+    },
   ];
 
   return (

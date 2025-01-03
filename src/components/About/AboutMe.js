@@ -19,10 +19,25 @@ const AboutMe = () => {
         "When my code works, I’m convinced I’m a wizard. When it doesn’t, it’s a ‘learning opportunity.’"
     ];
     
-    const displayRandomFact = () => {
-        const fact = facts[Math.floor(Math.random() * facts.length)];
-        setRandomFact(fact);
-    };
+    // const displayRandomFact = () => {
+    //     const fact = facts[Math.floor(Math.random() * facts.length)];
+    //     setRandomFact(fact);
+    // };
+    let shuffledFacts = [...facts]; // Copy the facts array
+let currentIndex = 0;
+
+const displayRandomFact = () => {
+    if (currentIndex === 0) {
+        // Shuffle the array when all facts are used
+        shuffledFacts = facts.sort(() => Math.random() - 0.5);
+    }
+    
+    const fact = shuffledFacts[currentIndex];
+    currentIndex = (currentIndex + 1) % shuffledFacts.length; // Increment and wrap around
+
+    setRandomFact(fact);
+};
+
     return (
         <div className="about-container">
             {/* Top Section */}
@@ -39,7 +54,7 @@ const AboutMe = () => {
                         I aspire to contribute to meaningful projects that are both visually appealing and impactful — creating solutions that resonate with users. I’m particularly interested in exploring how AI can personalize user experiences while maintaining a human-centric approach.
                     </p>
                     <p>
-                        Outside of work, I enjoy photography and music. Scroll down to check out some of my favorite shots!
+                        Outside of work, I enjoy photography and music. Scroll down to check out some of my favorite shots(soon) and listen to  my current favorite song!
                     </p>
                     <div className="songOfTheWeek">
                         {/* <p >Song of the Week:</p> */}
@@ -66,6 +81,7 @@ const AboutMe = () => {
                         <button
                             onClick={displayRandomFact}
                             className="image-button"
+                            alt="Click to reveal a random fact"
                         ></button>
                         {randomFact && <p className="random-fact">{randomFact}</p>}
 

@@ -11,7 +11,7 @@ const AboutMe = () => {
         "2024: The year I became a concert junkie with *three* back-to-back shows. Now I get why people cry at live music.",
         "Photography is my passion... and my excuse to tell people to 'hold still!'",
         // "Finally gave into the One Piece hype. Currently on Whole Cake Island, and still no idea what the One Piece is. Send snacks.",
-        "Finally gave into the One Piece hype. Currently on Whole Cake Island, and Big Mom is hangry. Send snacks.",
+        "Finally gave into the One Piece hype. Currently on Wano, and it sure is getting interesting...",
         "Saw Taylor Swift live, and let me tell you – the screaming, crying, and throwing up? All me.",
         "My top albums right now? evermore, The War, and SOMO:FUME.",
         "My IDE is my happy place. Well, until the red squiggly lines show up.",

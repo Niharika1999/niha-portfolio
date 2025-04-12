@@ -21,7 +21,7 @@ const Footer = () => {
         <a href="https://drive.google.com/file/d/10kXfZHy7LY4HeYG1orFw4EkjrDvlZlgX/view?usp=sharing">Resume</a>
         </div>
         <div className="footer-links-container">
-          <a href="https://linkedin.com/in/niharika-updhyayula" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/niharika-upadhyayula/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin /> LinkedIn
           </a>
           <a href="mailto:niharika.u03.com">

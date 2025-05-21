@@ -21,6 +21,9 @@ export default function Home() {
           <a href="mailto:niharika.u03@gmail.com">
             <button className="button-primary">Get in Touch →</button>
           </a>
+          <a href="https://niharika-upadhyayula.framer.website/">
+            <button className="button-primary">New Website→</button>
+          </a>
         </div>
         <hr></hr>
         <div className="rightSection">
